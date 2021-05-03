@@ -108,3 +108,4 @@
     - "{{ ad_group_membership_groups }}"
   #Only add groups to the group if the group state is present and the ad_group_membership_groups list has at least one entry
   when: ad_group_state | lower == "present" and ad_group_membership_groups | length > 0
+  
